@@ -13,7 +13,36 @@
 		884368382383EA0E00A80EAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884368362383EA0E00A80EAE /* Main.storyboard */; };
 		8843683A2383EA1200A80EAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 884368392383EA1200A80EAE /* Assets.xcassets */; };
 		8843683D2383EA1200A80EAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8843683B2383EA1200A80EAE /* LaunchScreen.storyboard */; };
+		8843684D2383EA4700A80EAE /* ChatModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 8843684B2383EA4700A80EAE /* ChatModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		884368502383EA4700A80EAE /* ChatModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884368492383EA4700A80EAE /* ChatModule.framework */; };
+		884368512383EA4700A80EAE /* ChatModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 884368492383EA4700A80EAE /* ChatModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		884368572383EAA900A80EAE /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884368562383EAA900A80EAE /* ChatViewController.swift */; };
+		884368592383EAB900A80EAE /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884368582383EAB900A80EAE /* Chat.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8843684E2383EA4700A80EAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 884368252383EA0E00A80EAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 884368482383EA4700A80EAE;
+			remoteInfo = ChatModule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		884368552383EA4700A80EAE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				884368512383EA4700A80EAE /* ChatModule.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8843682D2383EA0E00A80EAE /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +53,23 @@
 		884368392383EA1200A80EAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8843683C2383EA1200A80EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8843683E2383EA1200A80EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		884368492383EA4700A80EAE /* ChatModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChatModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8843684B2383EA4700A80EAE /* ChatModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatModule.h; sourceTree = "<group>"; };
+		8843684C2383EA4700A80EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		884368562383EAA900A80EAE /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		884368582383EAB900A80EAE /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8843682A2383EA0E00A80EAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				884368502383EA4700A80EAE /* ChatModule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		884368462383EA4700A80EAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				8843682F2383EA0E00A80EAE /* Chat */,
+				8843684A2383EA4700A80EAE /* ChatModule */,
 				8843682E2383EA0E00A80EAE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				8843682D2383EA0E00A80EAE /* Chat.app */,
+				884368492383EA4700A80EAE /* ChatModule.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +111,29 @@
 			path = Chat;
 			sourceTree = "<group>";
 		};
+		8843684A2383EA4700A80EAE /* ChatModule */ = {
+			isa = PBXGroup;
+			children = (
+				8843684B2383EA4700A80EAE /* ChatModule.h */,
+				8843684C2383EA4700A80EAE /* Info.plist */,
+				884368562383EAA900A80EAE /* ChatViewController.swift */,
+				884368582383EAB900A80EAE /* Chat.storyboard */,
+			);
+			path = ChatModule;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		884368442383EA4700A80EAE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8843684D2383EA4700A80EAE /* ChatModule.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		8843682C2383EA0E00A80EAE /* Chat */ = {
@@ -77,15 +143,35 @@
 				884368292383EA0E00A80EAE /* Sources */,
 				8843682A2383EA0E00A80EAE /* Frameworks */,
 				8843682B2383EA0E00A80EAE /* Resources */,
+				884368552383EA4700A80EAE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8843684F2383EA4700A80EAE /* PBXTargetDependency */,
 			);
 			name = Chat;
 			productName = Chat;
 			productReference = 8843682D2383EA0E00A80EAE /* Chat.app */;
 			productType = "com.apple.product-type.application";
+		};
+		884368482383EA4700A80EAE /* ChatModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 884368522383EA4700A80EAE /* Build configuration list for PBXNativeTarget "ChatModule" */;
+			buildPhases = (
+				884368442383EA4700A80EAE /* Headers */,
+				884368452383EA4700A80EAE /* Sources */,
+				884368462383EA4700A80EAE /* Frameworks */,
+				884368472383EA4700A80EAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatModule;
+			productName = ChatModule;
+			productReference = 884368492383EA4700A80EAE /* ChatModule.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +185,10 @@
 				TargetAttributes = {
 					8843682C2383EA0E00A80EAE = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					884368482383EA4700A80EAE = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -116,6 +206,7 @@
 			projectRoot = "";
 			targets = (
 				8843682C2383EA0E00A80EAE /* Chat */,
+				884368482383EA4700A80EAE /* ChatModule */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +219,14 @@
 				8843683D2383EA1200A80EAE /* LaunchScreen.storyboard in Resources */,
 				8843683A2383EA1200A80EAE /* Assets.xcassets in Resources */,
 				884368382383EA0E00A80EAE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		884368472383EA4700A80EAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				884368592383EAB900A80EAE /* Chat.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +243,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		884368452383EA4700A80EAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				884368572383EAA900A80EAE /* ChatViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8843684F2383EA4700A80EAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 884368482383EA4700A80EAE /* ChatModule */;
+			targetProxy = 8843684E2383EA4700A80EAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		884368362383EA0E00A80EAE /* Main.storyboard */ = {
@@ -283,6 +398,7 @@
 		884368422383EA1200A80EAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4EJQ3DNKGU;
@@ -301,6 +417,7 @@
 		884368432383EA1200A80EAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4EJQ3DNKGU;
@@ -313,6 +430,63 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		884368532383EA4700A80EAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4EJQ3DNKGU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ChatModule/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.armboldmind.ChatModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		884368542383EA4700A80EAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4EJQ3DNKGU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ChatModule/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.armboldmind.ChatModule;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -333,6 +507,15 @@
 			buildConfigurations = (
 				884368422383EA1200A80EAE /* Debug */,
 				884368432383EA1200A80EAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		884368522383EA4700A80EAE /* Build configuration list for PBXNativeTarget "ChatModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				884368532383EA4700A80EAE /* Debug */,
+				884368542383EA4700A80EAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
